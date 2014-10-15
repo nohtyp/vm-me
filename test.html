@@ -1,0 +1,69 @@
+<html>
+	<head>vm-me</head>
+	<title>This is a test html page</title>
+	<body>
+	<form>
+		<label for="projectname">Project Name:</label>
+		<input name='projectname' value=''/>
+		<br>
+		<br>
+		<label for="manage server">Manage Server:</label>
+		<input list="manage server" size="10">
+		<datalist id="manage server">
+			<option value='none'>
+			<option value='vmware'>
+			<option value='openstack'>
+			<option value='ovirt'>
+		</datalist>
+		<br>
+		<br>
+		<label for="webserver">Webserver:</label>
+		<input list="webserver" size="10">
+		<datalist id='webserver'>
+			<option value='none'>
+			<option value='nginx'>
+			<option value='apache'>
+		</datalist>
+		<br>
+		<br>
+		<label for="application server">Application Server:</label>
+		<input list="application server"size="10">
+	        <datalist id="application server">
+			<option value='none'>
+			<option value='jboss'>
+		        <option value='tomcat'>
+			<option value='glassfish'>
+		</datalist>
+		<br>
+		<br>
+		<label for="database server">Database Server:</label>
+		<input list="database server" size="10">
+		<datalist id="database server">
+			<option value='none'>
+			<option value='mysql'>
+		        <option value='postgresql'>
+			<option value='sqlserver'>
+		</datalist>
+		<br>
+		<br>
+		<label for="message queue server">Message Queue Server:</label>
+		<input list="message queue server" size="10">
+	        <datalist id='message queue server'>
+			<option value='none'>
+			<option value='rabbitmq'>
+		        <option value='activemq'>
+			<option value='zeromq'>
+		</datalist>
+		<br>
+		<br>
+		<label for="monitor systems">Monitor Systems?</label>
+		<input type="checkbox" name="monitor systems" value="yes">yes
+		<input type="checkbox" name="monitor systems" value="no">no
+		<br>
+		<br>
+		<input type='submit' value='build' />
+		<input type='submit' value='cancel' />
+		<input type='submit' value='defaults' />
+	</form>
+	</body>
+</html>
