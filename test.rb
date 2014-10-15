@@ -7,7 +7,7 @@ get '/' do
 		<br />
 		<br />
 		<label for="manage_server">Manage Server:</label>
-		<input list="manage_server" size="10" name="post[manage_server]" required pattern='none|vmware|openstack|ovirt'>
+		<input list="manage_server" size="10" name="post[manage_server]" required pattern='none|vmware|openstack|ovirt' placeholder='vmware'>
 		<datalist id="manage_server">
 			<option readonly value='none'>none</option>
 			<option value='vmware'>vmware</option>
@@ -17,7 +17,7 @@ get '/' do
 		<br />
 		<br />
 		<label for="webserver">Webserver:</label>
-		<input list="webserver" size="10" name="post[webserver]" required pattern='none|nginx|apache'>
+		<input list="webserver" size="10" name="post[webserver]" required pattern='none|nginx|apache' placeholder='nginx'>
 		<datalist id='webserver'>
 			<option value='none'>none</option>
 			<option value='nginx'>nginx</option>
@@ -26,7 +26,7 @@ get '/' do
 		<br />
 		<br />
 		<label for="application_server">Application Server:</label>
-		<input list="application_server"size="10" name="post[application_server]" required pattern='none|jboss|tomcat|glassfish'>
+		<input list="application_server"size="10" name="post[application_server]" required pattern='none|jboss|tomcat|glassfish' placeholder='jboss'>
 	        <datalist id="application_server">
 			<option value='none'>none</option>
 			<option value='jboss'>jboss</option>
@@ -36,7 +36,7 @@ get '/' do
 		<br />
 		<br />
 		<label for="database_server">Database Server:</label>
-		<input list="database_server" size="10" name="post[database_server]" required pattern='none|mysql|postgresql|sqlserver'>
+		<input list="database_server" size="10" name="post[database_server]" required pattern='none|mysql|postgresql|sqlserver' placeholder='mysql'>
 		<datalist id="database_server">
 			<option value='none'>none</option>
 			<option value='mysql'>mysql</option>
@@ -46,7 +46,7 @@ get '/' do
 		<br />
 		<br />
 		<label for="message_queue_server">Message Queue Server:</label>
-		<input list="message_queue_server" size="10" name="post[message_queue_server]" required pattern='none|rabbitmq|activemq|zeromq'>
+		<input list="message_queue_server" size="10" name="post[message_queue_server]" required pattern='none|rabbitmq|activemq|zeromq' placeholder='rabbitmq'>
 	        <datalist id='message_queue_server'>
 			<option value='none'>none</option>
 			<option value='rabbitmq'>rabbitmq</option>
