@@ -3,7 +3,7 @@ require 'sinatra'
 get '/' do
   %q{<form action="/manage_server" method="post">
                <label for="projectname">Project Name:</label>
-		<input name='projectname' value=''/>
+		<input name="post[projectname]" value=''/>
 		<br>
 		<br>
 		<label for="manage_server">Manage Server:</label>
