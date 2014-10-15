@@ -66,5 +66,5 @@ get '/' do
 end
 
 post '/manage_server' do
- "Options: #{params[:post]}"
+ "Parameters selected: #{params[:post]}"
 end
