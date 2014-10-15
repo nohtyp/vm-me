@@ -56,8 +56,8 @@ get '/' do
 		<br>
 		<br>
 		<label for="monitor_systems">Monitor Systems?</label>
-		<input type="checkbox" name="post[monitor_systems]" value="yes">yes</input>
-		<input type="checkbox" name="post[monitor_systems]" value="no">no</input>
+		<input type="radio" name="post[monitor_systems]" value="yes">yes</input>
+		<input type="radio" name="post[monitor_systems]" value="no">no</input>
 		<br>
 		<br>
 		<input type='submit' value='build' />
