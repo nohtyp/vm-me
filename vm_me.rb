@@ -11,10 +11,20 @@ get '/' do
   erb :login
 end
 
+get '/config' do
+  erb :config
+end
+
 post '/build' do
+  redirect '/config' unless File.file?('~/.vm_me.config')
   erb :index
 end
 
 post '/manage_server' do
  "Parameters selected: #{params[:post]}"
+end
+
+post '/configure' do
+  
+  "You have saved the file ~/vm_me.config"
 end

@@ -1,0 +1,21 @@
+<div>
+  <h1>vm-me</h1>
+  <h3>You need to setup your configuration.  This setup will create the file '~/.vm_me.config'</h3>
+
+  <form action="/configure" method="post">
+    <label for="hypervisor_server">Hypervisor:</label>
+    <input type="text" name="post[hypervisor_server]" value='' required />
+    <br />
+      <label for="hypervisor_username">Hypervisor username:</label>
+      <input type="text" name="post[hypervisor_username]" value='' required />
+      <br />
+        <label for="hypervisor_password">Hypervisor password:</label>
+        <input type="password" name="post[hypervisor_password]" value='' required />
+        <br />
+        <br />
+	<input type="submit" value="save" />
+	<input type="reset"  value="cancel" />
+  </form>
+</div>
+
+  
