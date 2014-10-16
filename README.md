@@ -4,3 +4,14 @@ The webapp will focus on vmware and redhat and expand from there.  The app is ve
 keep checking back as I am going to focus more on it in the coming weeks.
 
 
+To install on a linux system run the following:
+
+gem install bundler
+
+inside the directory run:
+
+bundle install
+
+To run the app after the above has been ran:
+
+ruby vm_me.rb
