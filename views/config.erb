@@ -3,13 +3,8 @@
   <h3>You need to setup your configuration.  This setup will create the file '~/.vm_me.config'</h3>
 
   <form action="/configured" method="post">
-    <label for="hypervisor_server">Hypervisor:</label>
-    <input list="hypervisor_server" size="10" name="post[hypervisor_server]" value='' required pattern='vmware|openstack|ovirt' placeholder="vmware" />
-    <datalist id="hypervisor_server">
-	    <option value='vmware'>vmware</option>
-	    <option value='openstack'>openstack</option>
-	    <option value='ovirt'>ovirt</option>
-    </datalist>
+    <label for="email_address">Email address:</label>
+    <input type="email" name="post[email_address]" value='' required placeholder="email address" />
     <br />
       <label for="hypervisor_username">Hypervisor username:</label>
       <input type="text" name="post[hypervisor_username]" value='' required />
