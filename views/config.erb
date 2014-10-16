@@ -4,10 +4,15 @@
 
   <form action="/configured" method="post">
     <label for="hypervisor_server">Hypervisor:</label>
-    <input type="text" name="post[hypervisor_server]" value='' required />
+    <input list="hypervisor_server" size="10" name="post[hypervisor_server]" value='' required pattern='vmware|openstack|ovirt' placeholder="vmware" />
+    <datalist id="hypervisor_server">
+	    <option value='vmware'>vmware</option>
+	    <option value='openstack'>openstack</option>
+	    <option value='ovirt'>ovirt</option>
+    </datalist>
     <br />
       <label for="hypervisor_username">Hypervisor username:</label>
-      <input type="text" name="post[hypervisor_username]" value='' required />
+      <input list="" name="post[hypervisor_username]" value='' required />
       <br />
         <label for="hypervisor_password">Hypervisor password:</label>
         <input type="password" name="post[hypervisor_password]" value='' required />
