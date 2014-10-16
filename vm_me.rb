@@ -24,7 +24,6 @@ post '/manage_server' do
  "Parameters selected: #{params[:post]}"
 end
 
-post '/configure' do
-  
+post '/configured' do
   "You have saved the file ~/vm_me.config"
 end
