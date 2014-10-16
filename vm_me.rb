@@ -8,6 +8,10 @@ not_found do
 end
 
 get '/' do
+  erb :login
+end
+
+post '/build' do
   erb :index
 end
 
