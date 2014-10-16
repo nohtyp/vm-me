@@ -1,5 +1,9 @@
 require 'sinatra'
 
+before do
+  @vm_me_config = File.expand_path("~/.vm_me.config")
+end
+
 error do
   erb :'500'
 end
@@ -11,12 +15,16 @@ get '/' do
   erb :login
 end
 
+get '/build' do
+  erb :index
+end
+
 get '/config' do
   erb :config
 end
 
 post '/build' do
-  redirect '/config' unless File.file?('~/.vm_me.config')
+  redirect '/config' unless File.file?(@vm_me_config)
   erb :index
 end
 
@@ -25,5 +33,6 @@ post '/manage_server' do
 end
 
 post '/configured' do
-  "You have saved the file ~/vm_me.config"
+  f = File.open(@vm_me_config, 'w')
+  redirect '/build'
 end
