@@ -1,0 +1,12 @@
+<div>
+  <h2>vm-me</h2>
+   <p>
+      <% e = request.env['sinatra_error'] %>
+      <%= p e.to_s %>
+      <%= p e.backtrace.join("\n") %>
+      Application error
+   </p>
+</div>
+<div id="footer">
+  <p><b>vm-me sinatra app</b>.</p>
+</div> 
