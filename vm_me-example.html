@@ -1,19 +1,32 @@
 <html>
 	<head>
 	  vm-me
-	  <script>
-          fuction myTest {
-		  alert("Hello moto!")
-	  }
-        </script>
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+       <script>
+       function myToggle() {
+	       var e = document.getElementById("nginxver");
+	       var t = document.getElementById("test").value;
+	       if (t == 'nginx') {
+		      e.style.display='none';
+	       } else {
+		      e.style.display='initial';
+	       }
+       } 
+	       
+       </script>
 	</head>
 	<title>
 		This is a test html page
 	</title>
 	<body>
-	<select name="test" onchange="myTest()" />
+	<select id="test" onchange="myToggle()"/>
 	  <option value='apache'>apache</option>
 	  <option value='nginx'>nginx</option>
+       </select>
+       <br />
+       <select id="nginxver" />
+	   <option value="1.1">1.1</option>
+	   <option value="2.1">2.1</option>
        </select>
 	</body>
 </html>
