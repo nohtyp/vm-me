@@ -29,7 +29,7 @@ post '/build' do
 end
 
 post '/manage_server' do
- "Parameters selected: #{params[:post]}"
+ "Parameters selected: #{params[:projectname]}, #{params[:application_server]}, #{params[:mange_server]}, #{params[:webserver]}, #{params[:database_server]}, #{params[:message_queue_server]}, #{params[:monitor_systems]}"
 end
 
 post '/configured' do
