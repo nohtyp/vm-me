@@ -4,13 +4,13 @@
 
   <form action="/configured" method="post">
     <label for="email_address">Email address:</label>
-    <input type="email" name="post[email_address]" value='' required placeholder="email address" />
+    <input type="email" name="email_address" value='' required placeholder="email address" />
     <br />
-      <label for="hypervisor_username">Hypervisor username:</label>
-      <input type="text" name="post[hypervisor_username]" value='' required />
+      <label for="versionmgmt">Version Control Management server:</label>
+      <input type="text" name="versionmgmt" required placeholder="Git server" />
       <br />
-        <label for="hypervisor_password">Hypervisor password:</label>
-        <input type="password" name="post[hypervisor_password]" value='' required />
+        <label for="vcspasswd">Version Control Management password:</label>
+        <input type="password" name="vcspasswd" required />
         <br />
         <br />
 	<input type="submit" value="save" />

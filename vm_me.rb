@@ -33,7 +33,7 @@ post '/manage_server' do
 end
 
 post '/configured' do
-  data = params[:post]
+  data = params
   f = File.open(@vm_me_config, 'w', 0600)
   data.each {|key, value| f.puts("#{key}:#{value}")}
   redirect '/build'
