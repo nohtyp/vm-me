@@ -2,9 +2,9 @@ function manageToggle() {
 	       var creds = document.getElementById("managecreds");
 	       var manage_value = document.getElementById("manage_server").value;
 	       if (manage_value == 'no hypervisor') {
-		      creds.style.display ='none';
+		      creds.style.display           ='none';
 	       } else {
-		      creds.style.display ='initial';
+		      creds.style.display           ='initial';
 	       }
        } 
 
@@ -12,14 +12,14 @@ function webToggle(webvalue) {
 	       var nginxver = document.getElementById("nginxversion");
 	       var apachever = document.getElementById("apacheversion");
 	       if (webvalue.value == 'no webserver') {
-		      apachever.style.display ='none';
-		      nginxver.style.display ='none';
+		      apachever.style.display      ='none';
+		      nginxver.style.display       ='none';
 	       } else if (webvalue.value == 'apache') {
-		      apachever.style.display = 'initial';
-		      nginxver.style.display  = 'none';
+		      apachever.style.display      = 'initial';
+		      nginxver.style.display       = 'none';
 	       } else if (webvalue.value == 'nginx') {
-	              nginxver.style.display  = 'initial';
-		      apachever.style.display = 'none';
+	              nginxver.style.display       = 'initial';
+		      apachever.style.display      = 'none';
 	       } else {
 		       alert("WTF")
 	       }
