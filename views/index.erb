@@ -7,49 +7,168 @@
     <br />
     <br />
       <label for="manage_server">Manage Server:</label>
-      <select name="manage_server">
-        <option value='none'>none</option>
+      <select id="manage_server" onchange="manageToggle()">
+        <option value='no hypervisor'selected="selected">no hypervisor</option>
         <option value='vmware'>vmware</option>
         <option value='openstack'>openstack</option>
         <option value='ovirt'>ovirt</option>
       </select>
       <br />
       <br />
+      <span id="managecreds" style='display:none'>
+        <label for="username">Hypervisor Username:</label>
+        <input type="text" name="username" required placeholder='username' />
+        <br />
+        <label for="password">Hypervisor Password:</label>
+        <input type="password" name="password" required placeholder='password' />
+        <br />
+        <br />
+      </span>
         <label for="webserver">Webserver:</label>
-        <select name='webserver'>
-          <option value='none'>none</option>
+        <select id='webserver' name="webserver" onchange="webToggle(webserver)">
+          <option value='no webserver' selected="selected">no webserver</option>
 	  <option value='nginx'>nginx</option>
 	  <option value='apache'>apache</option>
         </select>
 	<br />
         <br />
+	<span id="nginxversion" style="display:none">
+	  <label for="nginxvers">Nginx version:</label>
+	  <select name="nginxvers">
+            <option value='1.1'>1.1</option>
+            <option value='2.1'>2.1</option>
+            <option value='3.1'>3.1</option>
+          </select>
+	  <br />
+	  <br />
+        </span>
+        <span id="apacheversion" style="display:none">
+	  <label for="apachevers">Apache version:</label>
+	  <select name="apachevers">
+            <option value='4.1'>4.1</option>
+            <option value='5.1'>5.1</option>
+            <option value='6.1'>6.1</option>
+          </select>
+	  <br />
+	  <br />
+        </span>
 	  <label for="application_server">Application Server:</label>
-	  <select name="application_server">
-	    <option value='none'>none</option>
+	  <select id='application_server' name="application_server" onchange="appToggle(application_server)">
+	    <option value='no app server'>No application server</option>
 	    <option value='jboss'>jboss</option>
 	    <option value='tomcat'>tomcat</option>
             <option value='glassfish'>glassfish</option>
 	  </select>
 	  <br />
 	  <br />
+	<span id="jbossversion" style="display:none">
+	  <label for="jbossvers">Jboss version:</label>
+	  <select name="jbossvers">
+            <option value='22'>22</option>
+            <option value='24'>24</option>
+            <option value='23'>23</option>
+          </select>
+	  <br />
+	  <br />
+        </span>
+	<span id="tomcatversion" style="display:none">
+	  <label for="tomcatvers">Tomcat version:</label>
+	  <select name="tomcatvers">
+            <option value='26'>26</option>
+            <option value='28'>28</option>
+            <option value='27'>27</option>
+          </select>
+	  <br />
+	  <br />
+        </span>
+	<span id="glassfishversion" style="display:none">
+	  <label for="glassfishvers">Glassfish version:</label>
+	  <select name="glassfishvers">
+            <option value='30'>30</option>
+            <option value='38'>38</option>
+            <option value='37'>37</option>
+          </select>
+	  <br />
+	  <br />
+        </span>
 	    <label for="database_server">Database Server:</label>
-	    <select name="database_server">
-	      <option value='none'>none</option>
+	    <select id="database_server" onchange="dbToggle(database_server)">
+	      <option value='no database server'>No database server</option>
 	      <option value='mysql'>mysql</option>
 	      <option value='postgresql'>postgresql</option>
               <option value='sqlserver'>sqlserver</option>
 	    </select>
 	    <br />
 	    <br />
+	<span id="mysqlversion" style="display:none">
+	  <label for="mysqlvers">Mysql version:</label>
+	  <select name="mysqlvers">
+            <option value='22'>22</option>
+            <option value='24'>24</option>
+            <option value='23'>23</option>
+          </select>
+	  <br />
+	  <br />
+        </span>
+	<span id="postgresqlversion" style="display:none">
+	  <label for="postgresqlvers">Postgresql version:</label>
+	  <select name="postgresqlvers">
+            <option value='26'>26</option>
+            <option value='28'>28</option>
+            <option value='27'>27</option>
+          </select>
+	  <br />
+	  <br />
+        </span>
+	<span id="sqlserverversion" style="display:none">
+	  <label for="sqlserververs">Sqlserver version:</label>
+	  <select name="sqlserververs">
+            <option value='30'>30</option>
+            <option value='38'>38</option>
+            <option value='37'>37</option>
+          </select>
+	  <br />
+	  <br />
+        </span>
 	      <label for="message_queue_server">Message Queue Server:</label>
-	      <select name='message_queue_server'>
-	        <option value='none'>none</option>
+	      <select id='message_queue_server' onchange="msgToggle(message_queue_server)">
+	        <option value='no msg queue'>no msg queue</option>
 		<option value='rabbitmq'>rabbitmq</option>
 	        <option value='activemq'>activemq</option>
 		<option value='zeromq'>zeromq</option>
               </select>
 	      <br />
 	      <br />
+	<span id="rabbitmqversion" style="display:none">
+	  <label for="rabbitmqvers">RabbitMQ version:</label>
+	  <select name="rabbitmqvers">
+            <option value='22'>22</option>
+            <option value='24'>24</option>
+            <option value='23'>23</option>
+          </select>
+	  <br />
+	  <br />
+        </span>
+	<span id="activemqversion" style="display:none">
+	  <label for="activemqvers">ActiveMQ version:</label>
+	  <select name="activemqvers">
+            <option value='26'>26</option>
+            <option value='28'>28</option>
+            <option value='27'>27</option>
+          </select>
+	  <br />
+	  <br />
+        </span>
+	<span id="zeromqversion" style="display:none">
+	  <label for="zeromqvers">ZeroMQ version:</label>
+	  <select name="zeromqvers">
+            <option value='30'>30</option>
+            <option value='38'>38</option>
+            <option value='37'>37</option>
+          </select>
+	  <br />
+	  <br />
+        </span>
 	        <label for="monitor_systems">Monitor Systems?</label>
 		  <input type="radio" name="monitor_systems" value="yes" checked>yes</input>
 		  <input type="radio" name="monitor_systems" value="no">no</input>
