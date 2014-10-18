@@ -96,3 +96,34 @@ function msgToggle(msgvalue) {
 		       alert("WTF")
 	       }
        }
+function cancelToggle() {
+               var rabbitmqver   = document.getElementById("rabbitmqversion");
+               var activemqver   = document.getElementById("activemqversion");
+               var zeromqver     = document.getElementById("zeromqversion");
+               var mysqlver      = document.getElementById("mysqlversion");
+               var postgresqlver = document.getElementById("postgresqlversion");
+               var sqlserverver  = document.getElementById("sqlserverversion");
+               var jbossver      = document.getElementById("jbossversion");
+               var tomcatver     = document.getElementById("tomcatversion");
+               var glassfishver  = document.getElementById("glassfishversion");
+               var nginxver      = document.getElementById("nginxversion");
+               var apachever     = document.getElementById("apacheversion");
+               var creds         = document.getElementById("managecreds");
+
+               rabbitmqver.style.display   = 'none';
+               activemqver.style.display   = 'none';
+               zeromqver.style.display     = 'none';
+               mysqlver.style.display      = 'none';
+               postgresqlver.style.display = 'none';
+               sqlserverver.style.display  = 'none';
+               jbossver.style.display      = 'none';
+               tomcatver.style.display     = 'none';
+               glassfishver.style.display  = 'none';
+               nginxver.style.display      = 'none';
+               apachever.style.display     = 'none';
+               creds.style.display         = 'none';
+}
+
+
+
+

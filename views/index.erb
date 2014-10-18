@@ -1,5 +1,6 @@
   <div id="header"><header>EZ-VM</header></div>
-  <form action="/manage_server" method="post">
+<div id="builder">
+<form action="/manage_server" method="post">
     <label for="projectname">Project Name:</label>
     <input id="projectname" name="projectname" value=''required />
     <br />
@@ -15,10 +16,10 @@
       <br />
       <span id="managecreds" style='display:none'>
         <label for="username">Hypervisor Username:</label>
-        <input type="text" name="username" required placeholder='username' />
+        <input id="username" type="text" name="username" required placeholder='username' />
         <br />
         <label for="password">Hypervisor Password:</label>
-        <input type="password" name="password" required placeholder='password' />
+        <input id="password" type="password" name="password" required placeholder='password' />
         <br />
         <br />
       </span>
@@ -173,6 +174,7 @@
 	  <br />
 	  <br />
 	  <input id="build" type="submit" value="build" />
-	  <input id="cancel" type="reset" value="cancel" />
+	  <input id="cancel" type="reset" value="cancel" onclick="cancelToggle()" />
   </form>
+  </div>
 <footer id="footer"></footer>

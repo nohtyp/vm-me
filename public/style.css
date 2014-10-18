@@ -30,6 +30,16 @@
 	margin-right: 350px;
 	margin-left: 350px;
 }
+#password {
+	width: 200px;
+	height: 14px;
+	margin-top: 5px;
+}
+#username {
+	width: 200px;
+	height: 14px;
+	margin-top: 5px;
+}
 #projectname {
 	width: 250px;
 	height: 14px;
@@ -40,14 +50,12 @@
 	color: white;
 	background: #29A3CC;
 	margin-right: 10px;
-	margin-bottom: 300px;
 }
 #cancel {
 	height: 40;
 	width: 70;
 	color: white;
 	background: #29A3CC;
-	margin-bottom: 300px;
 }
 #clear {
 	color: white;
@@ -90,4 +98,12 @@
 	text-align: center;
 	font-size: 200%;
 	color: red;
+}
+#builder {
+	text-align: center;
+	border-width: 3px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	margin-right: 350px;
+	margin-left: 350px;
 }
