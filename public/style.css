@@ -6,8 +6,8 @@
 	text-align: center;
 	font-stretch: expanded;
 }
-footer {
-	height: 60px;
+#footer {
+	height: 80px;
 	background: #29A3CC;
 }
 
