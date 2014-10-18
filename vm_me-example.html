@@ -1,32 +1,22 @@
 <html>
 	<head>
-	  vm-me
-       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-       <script>
-       function myToggle() {
-	       var e = document.getElementById("nginxver");
-	       var t = document.getElementById("test").value;
-	       if (t == 'nginx') {
-		      e.style.display='none';
-	       } else {
-		      e.style.display='initial';
-	       }
-       } 
-	       
-       </script>
-	</head>
-	<title>
-		This is a test html page
-	</title>
+        <link rel="stylesheet" type="text/css" href="public/teststyle.css">
+        </head>
 	<body>
-	<select id="test" onchange="myToggle()"/>
-	  <option value='apache'>apache</option>
-	  <option value='nginx'>nginx</option>
-       </select>
-       <br />
-       <select id="nginxver" />
-	   <option value="1.1">1.1</option>
-	   <option value="2.1">2.1</option>
-       </select>
-	</body>
+	  <div id="header"><header>Virtrual machine command</header></div>
+          <form action="/build" id="login_page" method="post">
+          <div id="loginpage">
+          <label for="login_username">Username:</label>
+          <input type='text' id="login_username" name="login_username" value='' placeholder='Username' required>
+          <br />
+          <label for="login_password">Password:</label>
+          <input type='password' id="login_password" name="login_password" value='' placeholder='Password' required>
+          <br />
+          <br />
+          <input id="submit" type='submit' value='login' />
+          <input id="reset" type='reset' value='reset' />
+          </div>
+          </form>
+	  <footer></footer>
+        </body>
 </html>
