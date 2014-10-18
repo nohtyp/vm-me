@@ -4,17 +4,11 @@
 	font-size: 50px;
 	color: white;
 	text-align: center;
-	font-stretch: expanded;
 }
 #footer {
 	height: 80px;
 	background: #29A3CC;
 }
-
-/*#input {
-  display: inline;
-  width: 200px;
-}*/
 
 #submit {
 	height: 40;
@@ -35,4 +29,65 @@
 	margin-bottom: 250px;
 	margin-right: 350px;
 	margin-left: 350px;
+}
+#projectname {
+	width: 250px;
+	height: 14px;
+	margin-top: 15px;
+}
+#build {
+	width: 170;
+	color: white;
+	background: #29A3CC;
+	margin-right: 10px;
+	margin-bottom: 300px;
+}
+#cancel {
+	height: 40;
+	width: 70;
+	color: white;
+	background: #29A3CC;
+	margin-bottom: 300px;
+}
+#clear {
+	color: white;
+	background: #29A3CC;
+	width: 70px;
+	margin-bottom: 250px;
+}
+#save {
+	color: white;
+	background: #29A3CC;
+	width: 70px;
+	margin-bottom: 250px;
+}
+#vcs {
+	text-align: center;
+	border-width: 10px;
+	margin-top: 80px;
+	margin-bottom: 90px;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+#email {
+	text-align: left;
+	margin-left: 28px;
+	margin-right: 0px;
+}
+#versionmgmt {
+	text-align: left;
+	margin-left: 43px;
+	margin-right: 0px;
+	margin-top: 5px;
+}
+#vcspasswd {
+	text-align: left;
+	margin-left: 20px;
+	margin-right: 0px;
+	margin-top: 5px;
+}
+#info {
+	text-align: center;
+	font-size: 200%;
+	color: red;
 }

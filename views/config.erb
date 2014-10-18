@@ -1,21 +1,20 @@
-<div>
-  <h1>vm-me</h1>
-  <h3>You need to setup your configuration.  This setup will create the file '~/.vm_me.config'</h3>
+  <div id="header"><header>EZ-VM</header></div>
+  <div id="info">You need to setup your configuration.  This setup will create the file '~/.vm_me.config'</div>
 
+  <div id="vcs">
   <form action="/configured" method="post">
     <label for="email_address">Email address:</label>
-    <input type="email" name="email_address" value='' required placeholder="email address" />
+    <input type="email" id="email" name="email_address" value='' required placeholder="email address" />
     <br />
-      <label for="versionmgmt">Version Control Management server:</label>
-      <input type="text" name="versionmgmt" required placeholder="Git server" />
+      <label for="versionmgmt">VCS server:</label>
+      <input id="versionmgmt" type="text" name="versionmgmt" required placeholder="Git server" />
       <br />
-        <label for="vcspasswd">Version Control Management password:</label>
-        <input type="password" name="vcspasswd" required />
+        <label for="vcspasswd">VCS password:</label>
+        <input id="vcspasswd" type="password" name="vcspasswd" required placeholder="password"/>
         <br />
         <br />
-	<input type="submit" value="save" />
-	<input type="reset"  value="cancel" />
+	<input id="save" type="submit" value="save" />
+	<input id="clear" type="reset"  value="clear" />
   </form>
-</div>
-
-  
+  </div>
+<div id="footer"><footer></footer></div>

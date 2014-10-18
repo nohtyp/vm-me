@@ -1,9 +1,7 @@
-<div>
-  <h1>vm-me</h1>
-
+  <div id="header"><header>EZ-VM</header></div>
   <form action="/manage_server" method="post">
     <label for="projectname">Project Name:</label>
-    <input name="projectname" value=''required />
+    <input id="projectname" name="projectname" value=''required />
     <br />
     <br />
       <label for="manage_server">Manage Server:</label>
@@ -174,7 +172,7 @@
 	  <input type="radio" name="monitor_systems" value="no">no</input>
 	  <br />
 	  <br />
-	  <input type='submit' value='build' />
-	  <input type='reset' value='cancel' />
+	  <input id="build" type="submit" value="build" />
+	  <input id="cancel" type="reset" value="cancel" />
   </form>
-</div>
+<footer id="footer"></footer>
