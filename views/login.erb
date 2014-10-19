@@ -1,16 +1,12 @@
-<div id="header"><header>EZ-VM</header></div>
-<form action="/build" id="login_page" method="post">
+<div id="header"><header>VM Builder</header></div>
 <div class="loginpage">
-<label for="login_username">Username:</label>
-<input type='text' id="login_username" name="login_username" value='' placeholder='Username' required>
+<form action="/build" id="login_page" method="post">
+<input type='text'id="loginun" name="login_username" placeholder='Username' required>
 <br />
-<label for="login_password">Password:</label>
-<input type='password' id="login_password" name="login_password" value='' placeholder='Password' required>
+<input type='password' id="loginpw" name="login_password" placeholder='Password' required>
 <br />
-<br />
-<input id="submit" type='submit' value='login' />
-<input id="reset" type='reset' value='reset' />
-</div>
+<input form="login_page" id="submit" type='submit' value='login' />
+<input form="login_page" id="reset" type='reset' value='reset' />
 </form>
 </div>
 <div id="footer"><footer></footer></div>

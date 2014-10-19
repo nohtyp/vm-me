@@ -9,101 +9,166 @@
 	height: 80px;
 	background: #29A3CC;
 }
-
-#submit {
-	height: 40;
-	width: 70;
+.loginpage #submit {
+	height: 30px;
+	width: 100px;
 	color: white;
 	background: #29A3CC;
+        margin-top: 8px; 
+        margin-left: 690px;
+        margin-right: 2px;
+        border-radius: 15px;
+        font-family: "Arial" 
+        font-size: 10px;
 }
-#reset {
-	height: 40;
-	width: 70;
+.loginpage #reset {
+	height: 30px;
+	width: 100px;
 	color: white;
 	background: #29A3CC;
+        margin-top: 8px; 
+        margin-left: 2px;
+        margin-right: 4px;
+        border-radius: 15px;
+}
+.loginpage #loginun {
+	padding: 10px;
+	width: 200px;
+        margin-top: 7px;
+        margin-left: 680px;
+}
+.loginpage #loginpw {
+        padding: 10px;
+        width: 200px;
+        margin-top: 7px;
+        margin-left: 680px;
 }
 .loginpage {
-	text-align: center;
 	border-width: 3px;
-	margin-top: 250px;
-	margin-bottom: 250px;
-	margin-right: 350px;
-	margin-left: 350px;
+	margin-top: 175px;
+	margin-bottom: 300px;
 }
-#password {
-	width: 200px;
-	height: 14px;
-	margin-top: 5px;
-}
-#username {
-	width: 200px;
-	height: 14px;
-	margin-top: 5px;
-}
-#projectname {
-	width: 250px;
-	height: 14px;
-	margin-top: 15px;
-}
-#build {
-	width: 170;
+.vcs #clear {
+        font-size: 100%;
+	height: 30px;
+	width: 100px;
 	color: white;
 	background: #29A3CC;
-	margin-right: 10px;
+        margin-top: 8px; 
+        margin-left: 2px;
+        margin-right: 4px;
+        border-radius: 15px;
 }
-#cancel {
-	height: 40;
-	width: 70;
+.vcs #save {
+        font-size: 100%;
+	height: 30px;
+	width: 100px;
 	color: white;
 	background: #29A3CC;
+        margin-top: 8px; 
+        margin-left: 2px;
+        margin-right: 4px;
+        border-radius: 15px;
 }
-#clear {
-	color: white;
-	background: #29A3CC;
-	width: 70px;
-	margin-bottom: 250px;
-}
-#save {
-	color: white;
-	background: #29A3CC;
-	width: 70px;
-	margin-bottom: 250px;
-}
-#vcs {
+.vcs {
 	text-align: center;
 	border-width: 10px;
-	margin-top: 80px;
-	margin-bottom: 90px;
+	margin-top: 100px;
+	margin-bottom: 300px;
 	margin-right: 50px;
 	margin-left: 50px;
 }
-#email {
-	text-align: left;
-	margin-left: 28px;
-	margin-right: 0px;
+.vcs #email {
+        padding: 10px;
+        width: 200px;
+        margin-top: 7px;
 }
-#versionmgmt {
-	text-align: left;
-	margin-left: 43px;
-	margin-right: 0px;
-	margin-top: 5px;
+.vcs #versionmgmt {
+        padding: 10px;
+        width: 200px;
+        margin-top: 7px;
 }
-#vcspasswd {
-	text-align: left;
-	margin-left: 20px;
-	margin-right: 0px;
-	margin-top: 5px;
+.vcs #vcspasswd {
+        padding: 10px;
+        width: 200px;
+        margin-top: 7px;
 }
 #info {
 	text-align: center;
 	font-size: 200%;
 	color: red;
 }
-#builder {
+.builder {
 	text-align: center;
 	border-width: 3px;
-	margin-top: 60px;
 	margin-bottom: 60px;
 	margin-right: 350px;
 	margin-left: 350px;
+}
+.builder #build {
+        font-size: 100%;
+	height: 30px;
+	width: 100px;
+	color: white;
+	background: #29A3CC;
+        margin-top: 8px; 
+        margin-left: 2px;
+        margin-right: 4px;
+        border-radius: 15px;
+}
+.builder #cancel {
+        font-size: 100%;
+	height: 30px;
+	width: 100px;
+	color: white;
+	background: #29A3CC;
+        margin-top: 8px; 
+        margin-left: 2px;
+        margin-right: 4px;
+        border-radius: 15px;
+}
+
+.builder #projectname {
+        margin-top: 15px;
+	width: 250px;
+	height: 20px;
+}
+.builder #username {
+	margin-bottom: 3px;
+	width: 200px;
+	height: 15px;
+}
+.builder #password {
+	margin-top: 3px;
+	width: 200px;
+	height: 15px;
+}
+.builder #manage_server {
+        margin-top: 8px;
+	width: 130px;
+	height: 20px;
+}
+.builder #webserver {
+        text-align: right;
+        margin-top: 4px;
+	width: 130px;
+	height: 20px;
+}
+.builder #application_server {
+        text-align: right;
+        margin-top: 4px;
+	width: 150px;
+	height: 20px;
+}
+.builder #database_server {
+        text-align: right;
+        margin-top: 4px;
+	width: 150px;
+	height: 20px;
+}
+.builder #message_queue_server {
+        text-align: right;
+        margin-top: 4px;
+	width: 130px;
+	height: 20px;
 }

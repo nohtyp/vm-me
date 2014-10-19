@@ -1,8 +1,8 @@
-  <div id="header"><header>EZ-VM</header></div>
-<div id="builder">
+<div id="header"><header>EZ-VM</header></div>
+<div class="builder">
 <form action="/manage_server" method="post">
     <label for="projectname">Project Name:</label>
-    <input id="projectname" name="projectname" value=''required />
+    <input id="projectname" name="projectname" required />
     <br />
     <br />
       <label for="manage_server">Manage Server:</label>
@@ -53,7 +53,7 @@
         </span>
 	  <label for="application_server">Application Server:</label>
 	  <select id='application_server' name="application_server" onchange="appToggle(application_server)">
-	    <option value='no app server'>No application server</option>
+	    <option value='no app server'>no application server</option>
 	    <option value='jboss'>jboss</option>
 	    <option value='tomcat'>tomcat</option>
             <option value='glassfish'>glassfish</option>
@@ -92,7 +92,7 @@
         </span>
 	    <label for="database_server">Database Server:</label>
 	    <select id="database_server" onchange="dbToggle(database_server)">
-	      <option value='no database server'>No database server</option>
+	      <option value='no database server'>no database server</option>
 	      <option value='mysql'>mysql</option>
 	      <option value='postgresql'>postgresql</option>
               <option value='sqlserver'>sqlserver</option>
