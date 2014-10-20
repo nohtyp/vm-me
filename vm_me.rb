@@ -33,8 +33,12 @@ post '/manage_server' do
 end
 
 post '/configured' do
-  data = params
-  f = File.open(@vm_me_config, 'w', 0600)
-  data.each {|key, value| f.puts("#{key}:#{value}")}
-  redirect '/build'
+
+@arg = [ 'email_address', 'versionmgmt', 'vcspasswd' ]
+
+  File.open(@vm_me_config, 'w', 0600) do |file|
+    #@arg = [ 'email_address', 'versionmgmt', 'vcspasswd' ]
+    @arg.each {|p| file.puts("#{p}" + ":" + params[p])}
+  end
+    redirect '/build'
 end
