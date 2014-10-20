@@ -146,29 +146,29 @@
 .builder #manage_server {
         margin-top: 8px;
 	width: 130px;
-	height: 20px;
+	height: 30px;
 }
 .builder #webserver {
-        text-align: right;
+        text-align: left;
         margin-top: 4px;
-	width: 130px;
-	height: 20px;
+	width: 150px;
+	height: 30px;
 }
 .builder #application_server {
-        text-align: right;
+        text-align: left;
         margin-top: 4px;
 	width: 150px;
-	height: 20px;
+	height: 30px;
 }
 .builder #database_server {
-        text-align: right;
+        text-align: left;
         margin-top: 4px;
 	width: 150px;
-	height: 20px;
+	height: 30px;
 }
 .builder #message_queue_server {
-        text-align: right;
+        text-align: left;
         margin-top: 4px;
-	width: 130px;
-	height: 20px;
+	width: 150px;
+	height: 30px;
 }
