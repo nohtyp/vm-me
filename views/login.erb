@@ -1,12 +1,24 @@
-<div id="header"><header>EZ-VM</header></div>
-<div class="loginpage">
-<form action="/build" id="login_page" method="post">
-<input type='text'id="loginun" name="login_username" placeholder='Username' required>
-<br />
-<input type='password' id="loginpw" name="login_password" placeholder='Password' required>
-<br />
-<input form="login_page" id="submit" type='submit' value='login' />
-<input form="login_page" id="reset" type='reset' value='reset' />
-</form>
-</div>
-<div id="footer"><footer></footer></div>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="teststyle.css">
+        </head>
+	<body>
+	<div class="header">
+          <header>
+	    Virtrual Machine Command
+	  </header>
+	</div>
+	<div class="container">
+          <form action="/build" id="login_page" method="post">
+		  <!--<div class="loginpage"> -->
+              <label for="login_username" name="login_username" class="hidden-label">Username:</label>
+              <input type='text' id="login_username" name="login_username"  placeholder='Username' required>
+              <label for="login_password" name="login_password" class="hidden-label">Password:</label>
+              <input type='password' id="login_password" name="login_password" placeholder='Password' required>
+              <input id="submit" type='submit' value='login' />
+                  <!--</div>-->
+          </form>
+	  <footer></footer>
+        </body>
+</html>

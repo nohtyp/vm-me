@@ -36,7 +36,7 @@ post '/configured' do
 
 @arg = [ 'email_address', 'versionmgmt', 'vcspasswd' ]
 
-  File.open(@vm_me_config, 'w', 0600) do |file|
+  File.open(@vm_me_config, 'r', 0600) do |file|
     #@arg = [ 'email_address', 'versionmgmt', 'vcspasswd' ]
     @arg.each {|p| file.puts("#{p}" + ":" + params[p])}
   end

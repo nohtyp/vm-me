@@ -1,38 +1,86 @@
-#header {
-	height: 70px;
-	background: #29A3CC;
-	font-size: 50px;
-	color: white;
-	text-align: center;
-	font-stretch: expanded;
+html {
+  background-color: LightBlue;
 }
-footer {
-	height: 60px;
-	background: #29A3CC;
+body {
+  font-family: Tahoma, sans-serif;
 }
 
-input {
-  display: inline;
-  width: 158px;
+.container {
+  background-color: white;
+  max-width: 600px;
+  box-sizing: border-box;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 100px 80px;
+  box-shadow: -8px -6px 10px rgba(0, 0, 0, .2), 10px 10px 10px rgba(0, 0, 0, .2);
 }
 
-#submit {
-	height: 30;
-	width: 50;
-	color: white;
-	background: #29A3CC;
+.loginpage {
+  text-align: center;
+  padding: 0 5px;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
 }
-#reset {
-	height: 30;
-	width: 50;
-	color: white;
-	background: #29A3CC;
+
+
+.header {
+  color: white;
+  padding: 10px;
+  font-size: 50px;
+  font-weight: bold;
+  box-sizing: border-box;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 60px;
+  max-width: 800px;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
-#loginpage {
-	text-align: center;
-	border-width: 3px;
-	margin-top: 250px;
-	margin-bottom: 250px;
-	margin-right: 350px;
-	margin-left: 350px;
+
+.hidden-label {
+  poistion: absolute;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+input[type="text"],
+input[type="password"]{
+  width: 60%;
+  text-align: center;
+  display: block;
+  border: none;
+  background-color: white;
+  border-bottom: 2px solid LightGray;
+  padding: 0 5px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+  height: 40px;
+  font-family: Tahoma, sans-serif;
+  font-size: 100%;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus{
+  border-bottom: 2px solid red;
+  outline: none;
+}
+
+
+input[type="submit"]{
+  width: 50%;
+  height: 40px;
+  display: block;
+  box-sizing: border-box;
+  background-color: Purple;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  color: white;
+  font-family: Tahoma, sans-serif;
+  font-size: 100%;
 }
